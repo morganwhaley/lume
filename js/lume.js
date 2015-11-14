@@ -68,8 +68,7 @@ Lume.prototype.buildFullsizePhotoURLs = function(target) {
     var imageSource = target.src;
     // strip out the character before file extension
     var newImg = imageSource.replace('_m.jpg', '_c.jpg');
-    console.log(newImg);
-
+    return newImg;
 
     //return 'https://farm' + photoItemObj.farm_id + '.staticflickr.com/' + photoItemObj.server + '/' + photoItemObj.id + '_' + photoItemObj.secret + '.jpg';
 };
@@ -93,9 +92,7 @@ Lume.prototype.createPhotoItem = function(photoItemObj) {
 Lume.prototype.handlePhotoClick = function(e) {
     e.preventDefault;
     var target = e.target;
-    this.buildFullsizePhotoURLs(target);
-    //var fullsizeImage = this.buildFullsizePhotoURLs(target);
-    //console.log(fullsizeImage);
+    var fullsizeImage = this.buildFullsizePhotoURLs(target);
 
 };
 
