@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: bold;
+  font-family: Helvetica, Arial, Verdana, Sans-Serif;
+}
+
+
+#gallery {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.photo_thumb {
+  cursor: pointer;
+  margin: 10px;
+}
